@@ -257,11 +257,11 @@ p[data-width="wide"] {
   .primary-navigation {
     display: none;
     z-index: 999;
-    position: fixed;
+    position: absolute;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
     max-width: 25rem;
-    margin-inline: auto;
+    /* margin-inline: auto; */
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
@@ -290,9 +290,9 @@ p[data-width="wide"] {
   .mobile-nav-toggle {
     z-index: 999;
     display: block;
-    position: fixed;
+    /* position: fixed;
     top: var(--size-600);
-    right: var(--size-400);
+    right: var(--size-400); */
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -368,12 +368,12 @@ input:where([type="text"], [type="email"], ) {
   .primary-footer-wrapper > * {
     margin-inline: auto;
   }
-  .logo {
+  /* .logo {
     width: 160px;
     height: 100px;
     margin: auto;
     padding-bottom: 70px;
-  }
+  } */
   .copyright {
     position: relative;
     top: 50%;

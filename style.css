@@ -526,18 +526,18 @@ input:where([type="text"], [type="email"], ) {
   list-style: none;
 }
 
-.a11y-slider-container {
+/* .a11y-slider-container {
   margin-block: var(--size-700);
   margin-inline: var(--size-400);
-}
+} */
 
-.slider > * {
+/* .slider > * {
   position: relative;
   flex: 0 0 auto;
   width: 100%;
-}
+} */
 
-@media (min-width: 30em) {
+/* @media (min-width: 30em) {
   .slider {
     scroll-padding-inline: 25px;
   }
@@ -548,11 +548,12 @@ input:where([type="text"], [type="email"], ) {
   .slider > * {
     width: 50%;
   }
-}
+} */
 
-@media (min-width: 50em) {
-  .slider > * {
-    width: 35%;
+@media (max-width: 50em) {
+  .slider {
+    width: 100%;
+    flex-direction: column;
   }
 }
 
